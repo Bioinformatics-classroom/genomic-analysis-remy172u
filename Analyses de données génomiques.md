@@ -1,8 +1,6 @@
 # Analyses de données génomiques
 
-Dr Anne-Sophie Denommé-Pichon
-
-2018-05-17
+Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
@@ -93,21 +91,18 @@ Fichier texte
 - Un entête (ou header)
 - Une ligne par variant
 - Une colonne par information
-  1. : Chromosome (CHROM)
-  2. : Position (POS)
-  3. : Référence dans dbSNP
-  4. : Allèle de référence (REF)
-  5. : Allèle alternatif (ALT)
-  6. : Qualité
-  7. : Filtre de qualité
-  8. : Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations
-    - ANN ou EFF (SnpEff)
-    - CSQ (VEP)
-    - …
-  9. : Génotype et autres informations (une colonne par échantillon)
+1. : Chromosome (CHROM)
+2. : Position (POS)
+3. : Référence dans dbSNP
+4. : Allèle de référence (REF)
+5. : Allèle alternatif (ALT)
+6. : Qualité
+7. : Filtre de qualité
+8. : Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations
+  - ANN ou EFF (SnpEff)
+  - CSQ (VEP)
+  - …
+9. : Génotype et autres informations (une colonne par échantillon)
 
 ## Exercice 3
-Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains.
-Les résultats ont été chargés sur wANNOVAR :
-http://wannovar.wglab.org/done/99327/sZgG_FQxzUAaX04G/index.html
-Q1 Quel variant est responsable de la pathologie de ce patient ?
+FIXME Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés sur wANNOVAR : http://wannovar.wglab.org/done/99327/sZgG_FQxzUAaX04G/index.html. Quel variant est responsable de la pathologie de ce patient ?
