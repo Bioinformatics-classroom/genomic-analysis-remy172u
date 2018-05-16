@@ -98,10 +98,7 @@ Fichier texte
 5. : Allèle alternatif (ALT)
 6. : Qualité
 7. : Filtre de qualité
-8. : Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations
-  - ANN ou EFF (SnpEff)
-  - CSQ (VEP)
-  - …
+8. : Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations : `ANN` ou `EFF` (SnpEff), `CSQ` (VEP)…
 9. : Génotype et autres informations (une colonne par échantillon)
 
 ## Exercice 3
