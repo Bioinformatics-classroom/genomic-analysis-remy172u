@@ -41,7 +41,7 @@ Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopk
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
 
-FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  <code>GCAT<b>C</b>ACAC</code> dans le sens de transcription du gène (3′5′). Le nucléotide en gras est le nucléotide délété.
+FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delC` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété).
 
 ![FIXME](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/FIXME.jpg)
 
