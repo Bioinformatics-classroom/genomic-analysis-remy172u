@@ -46,7 +46,7 @@ Identification de trois variations chez un patient avec un syndrome de Pitt-Hopk
 - Q4 Quelle est la conséquence protéique de chacun de ces variants ? `GnomAD`
 - Q5 Lequel de ces variants semble mériter une étude approfondie ? Argumentez.
 
-FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour recherche `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  `GCAT*C*ACAC` dans le sens de transcription du gène (3’5’). Le nucléotide en gras est le nucléotide délété.
+FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour recherche `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  `GCAT**C**ACAC` dans le sens de transcription du gène (3’5’). Le nucléotide en gras est le nucléotide délété.
 
 FIXME ajouter images
 
@@ -56,7 +56,7 @@ Identification d’une variation hétérozygote chez un patient avec petite tail
 
 - Q1 Dans quel gène se trouve la variation ?
 - Q2 Quelles sont les maladies associées à ce gène et quels sont leurs modes de transmission ? `OMIM`
-- Q3 Quel est le lien entre ce gène et le syndrome de Turner ? `OMIM / PubMed`
+- Q3 Quel est le lien entre ce gène et le syndrome de Turner ? `OMIM` `PubMed`
 - Q4 Quelle est la notation HGVS de cette variation au niveau génomique (en utilisant GRCh37) ? `Mutalyzer`
 - Q5 Quelle est la signification des différentes parties de cette notation ? 
 - Q6 Quelle est la notation HGVS de cette variation au niveau protéique ? `Mutalyzer`
@@ -64,28 +64,50 @@ Identification d’une variation hétérozygote chez un patient avec petite tail
 - Q8 Quel est le type de variation au niveau protéique : faux-sens, non-sens, synonyme, variant d’épissage ? `Mutalyzer`
 - Q9 Visualisez la variation dans UCSC. Copiez l’URL de cette visualisation dans le fichier de réponses. `Mutalyzer`
 - Q10 Le gène est-il sur le brin sens ou anti-sens ? `UCSC`
-- Q11 Combien d’exons ce gène comporte-t-il (transcrit NM_000451.3) ? `UCSC`
+- Q11 Combien d’exons ce gène comporte-t-il (transcrit `NM_000451.3`) ? `UCSC`
 - Q12 Dans quel exon ce variant se trouve-t-il ? `UCSC`
 - Q13 Le variant se trouve-t-il dans une région conservée ? `UCSC, track 100 Vert. Cons`
 - Q14 Dans quel domaine fonctionnel protéique se trouve le variant ? `NCBI (protein)`
-- Q15 Dans quelle publication ce variant a-t-il déjà été décrit ? `LOVD` / `Pubmed`
+- Q15 Dans quelle publication ce variant a-t-il déjà été décrit ? `LOVD` `Pubmed`
 - Q16 Analysez ce variant dans VEP (Variant Effect Predictor) en utilisant GRCh37 (http://www.ensembl.org/Tools/VEP).
 Il existe plusieurs formats d’entrée dans VEP. Vous pouvez utiliser celui-ci : `SHOX:c.399G>C`
 Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Laissez les autres options par défaut.
 - Q17 Pourquoi existe-t-il plusieurs lignes alors que vous n’avez saisi qu’un seul variant ?
 - Q18 Exportez le résultat de cette requête au format VCF.
-- Q19 Analysez ce vcf dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse.
+- Q19 Analysez ce VCF dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse.
 - Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (`Standards and guidelines for the interpretation of sequence variants, Richards et al., Genet. Med., 2015`). Quel est le DOI de l’article ? `Pubmed`
-- Q21 D’après cet article, quels sont les critères déterminant une variation pathogène ou probablement pathogène ? (100 mots maximum, environ 8 à 10 critères attendus, exemple : « ségrégation du variant dans la famille »)
+- Q21 D’après cet article, quels sont les critères déterminant une variation pathogène ou probablement pathogène ? (100 mots maximum, environ 8 à 10 critères attendus, exemple : « ségrégation du variant dans la famille »).
 - Q22 Dans quelle catégorie classez-vous le variant `NM_000451.3:c.399G>C` (pathogène, probablement pathogène, probablement bénin, bénin, VOUS) ? Sur quels critères ?
-VEP / wANNOVAR
-PS1 : LOVD / ClinVar
-PS2 : énoncé
-PS3 : PubMed
-PS4 : GnomAD, 1000 Genomes, Exome Variant Server
-PM1 : NCBI (protein)
-PP3 : VEP / wANNOVAR
+  - `VEP` `wANNOVAR`
+  - PS1 : `LOVD` `ClinVar`
+  - PS2 : énoncé
+  - PS3 : `PubMed`
+  - PS4 : `GnomAD` `1000 Genomes` `Exome Variant Server`
+  - PM1 : `NCBI (protein)`
+  - PP3 : `VEP` `wANNOVAR`
 
+## Format VCF « *Variant Call Format* »
 
+Entre 40 000 et 150 000 variants pour un exome humain
+Fichier texte
+- Un entête (ou header)
+- Une ligne par variant
+- Une colonne par information
+  1. : Chromosome (CHROM)
+  2. : Position (POS)
+  3. : Référence dans dbSNP
+  4. : Allèle de référence (REF)
+  5. : Allèle alternatif (ALT)
+  6. : Qualité
+  7. : Filtre de qualité
+  8. : Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations
+    - ANN ou EFF (SnpEff)
+    - CSQ (VEP)
+    - …
+  9. : Génotype et autres informations (une colonne par échantillon)
 
-
+## Exercice 3
+Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains.
+Les résultats ont été chargés sur wANNOVAR :
+http://wannovar.wglab.org/done/99327/sZgG_FQxzUAaX04G/index.html
+Q1 Quel variant est responsable de la pathologie de ce patient ?
