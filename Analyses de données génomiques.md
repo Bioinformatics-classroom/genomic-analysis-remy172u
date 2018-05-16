@@ -80,23 +80,6 @@ Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Lais
   - PM1 : `NCBI (protein)`
   - PP3 : `VEP` `wANNOVAR`
 
-## Format VCF « *Variant Call Format* »
-
-Entre 40 000 et 150 000 variants pour un exome humain
-Fichier texte
-- Un entête (ou header)
-- Une ligne par variant
-- Une colonne par information
-1. Chromosome (CHROM)
-2. Position (POS)
-3. Référence dans dbSNP
-4. Allèle de référence (REF)
-5. Allèle alternatif (ALT)
-6. Qualité
-7. Filtre de qualité
-8. Annotations (INFO). La colonne INFO est elle-même subdivisée en champs en fonction de la provenance des annotations : `ANN` ou `EFF` (SnpEff), `CSQ` (VEP)…
-9. Génotype et autres informations (une colonne par échantillon)
-
 ## Exercice 3
 
 Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés [sur wANNOVAR](http://wannovar.wglab.org/FIXME).
