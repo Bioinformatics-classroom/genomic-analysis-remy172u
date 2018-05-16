@@ -4,10 +4,10 @@ Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
-Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension .md). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
+Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension `.md`). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
 
 ```
-# UE génétique médicale 2017-04-05
+# UE génétique médicale 2018-05-17
 * Prénom1 Nom1
 * Prénom2 Nom2
 ## Exercice 1
@@ -24,10 +24,14 @@ NC_000018.9:g.52895514_52895515delGA
 [NM_001083962.1:c.1957_1958delTC in UCSC](http://example.com)
 ```
 
+Vous avez jusqu'à ce soir, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre aux questions. Tout réponse apportée ultérieurement sera ignorée.
+
 ![Deadline](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
 FIXME uploader le screenshot de la deadline à la racine du dépôt avec le nom « Deadline.png »
 
-## Exercice 1
+## Exercices
+
+### Exercice 1
 
 Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopkins :
 1. `NC_000018.9:g.52895531T>C`
@@ -36,15 +40,16 @@ Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopk
 
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
+
+FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  <code>GCAT<b>C</b>ACAC</code> dans le sens de transcription du gène (3′5′). Le nucléotide en gras est le nucléotide délété.
+
+![FIXME](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/FIXME.jpg)
+
 - Q3 Quelle est la fréquence de chacun de ces variants dans la population générale ? `GnomAD`
 - Q4 Quelle est la conséquence protéique de chacun de ces variants ? `GnomAD`
 - Q5 Lequel de ces variants semble mériter une étude approfondie ? Argumentez.
 
-FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  `GCAT**C**ACAC` dans le sens de transcription du gène (3′5′). Le nucléotide en gras est le nucléotide délété.
-
-![FIXME](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/FIXME.jpg)
-
-## Exercice 2
+### Exercice 2
 
 Une variation hétérozygote est identifiée chez un patient avec petite taille à -3 DS et déformation de Madelung : `NM_000451.3:c.399G>C`. Le variant est également présent chez la mère, qui présente une petite taille à -2,5 DS. Il est absent chez le père, qui n’a pas de petite taille.
 
@@ -60,16 +65,16 @@ Une variation hétérozygote est identifiée chez un patient avec petite taille 
 - Q10 Le gène est-il sur le brin sens ou anti-sens ? `UCSC`
 - Q11 Combien d’exons ce gène comporte-t-il (transcrit `NM_000451.3`) ? `UCSC`
 - Q12 Dans quel exon ce variant se trouve-t-il ? `UCSC`
-- Q13 Le variant se trouve-t-il dans une région conservée ? `UCSC, track 100 Vert. Cons`
+- Q13 Le variant se trouve-t-il dans une région conservée ? `UCSC (track 100 Vert. Cons)`
 - Q14 Dans quel domaine fonctionnel protéique se trouve le variant ? `NCBI (protein)`
 - Q15 Dans quelle publication ce variant a-t-il déjà été décrit ? `LOVD` `Pubmed`
-- Q16 Analysez ce variant dans VEP (Variant Effect Predictor) en utilisant GRCh37 `VEP`.
+- Q16 Analysez ce variant dans VEP (Variant Effect Predictor) en utilisant GRCh37.
 Il existe plusieurs formats d’entrée dans VEP. Vous pouvez utiliser celui-ci : `SHOX:c.399G>C`
-Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Laissez les autres options par défaut.
+Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Laissez les autres options par défaut. `VEP`
 - Q17 Pourquoi existe-t-il plusieurs lignes alors que vous n’avez saisi qu’un seul variant ?
 - Q18 Exportez le résultat de cette requête au format VCF.
-- Q19 Analysez ce VCF dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse.
-- Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (`Standards and guidelines for the interpretation of sequence variants, Richards et al., Genet. Med., 2015`). Quel est le DOI de l’article ? `Pubmed`
+- Q19 Analysez ce VCF dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse. `wAnnovar`
+- Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (« *Standards and guidelines for the interpretation of sequence variants* », Richards et al., Genet. Med., 2015). Quel est le DOI de l’article ? `Pubmed`
 - Q21 D’après cet article, quels sont les critères déterminant une variation pathogène ou probablement pathogène ? (100 mots maximum, environ 8 à 10 critères attendus, exemple : « ségrégation du variant dans la famille »).
 - Q22 Dans quelle catégorie classez-vous le variant `NM_000451.3:c.399G>C` (pathogène, probablement pathogène, probablement bénin, bénin, VOUS) ? Sur quels critères ?
   - `VEP` `wANNOVAR`
@@ -79,8 +84,9 @@ Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Lais
   - PS4 : `GnomAD` `1000 Genomes` `Exome Variant Server`
   - PM1 : `NCBI (protein)`
   - PP3 : `VEP` `wANNOVAR`
+FIXME liste qui précède incompréhensible
 
-## Exercice 3
+### Exercice 3
 
 Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés [sur wANNOVAR](http://wannovar.wglab.org/FIXME).
 
