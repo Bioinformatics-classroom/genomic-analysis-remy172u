@@ -4,7 +4,7 @@ Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
-Écrire les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension .md). [Modèle](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) à respecter de formatage des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
+Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension .md). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
 
 ```
 # UE génétique médicale 2017-04-05
@@ -24,12 +24,12 @@ NC_000018.9:g.52895514_52895515delGA
 [NM_001083962.1:c.1957_1958delTC in UCSC](http://example.com)
 ```
 
-![Preview](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
+![Deadline](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
 FIXME uploader le screenshot de la deadline à la racine du dépôt avec le nom « Deadline.png »
 
 ## Exercice 1
 
-Identification de trois variations chez un patient avec un syndrome de Pitt-Hopkins :
+Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopkins :
 1. `NC_000018.9:g.52895531T>C`
 2. `NC_000018.9:g.52999284delC`
 3. `NC_000018.9:g. 53331929C>A`
@@ -42,11 +42,11 @@ Identification de trois variations chez un patient avec un syndrome de Pitt-Hopk
 
 FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence autour du nucléotide délété `NC_000018.9:g.52999284delC` est  `GCAT**C**ACAC` dans le sens de transcription du gène (3′5′). Le nucléotide en gras est le nucléotide délété.
 
-FIXME ajouter images
+![FIXME](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/FIXME.jpg)
 
 ## Exercice 2
 
-Identification d’une variation hétérozygote chez un patient avec petite taille à -3 DS et déformation de Madelung : `NM_000451.3:c.399G>C`. Le variant est également présent chez la mère, qui présente une petite taille à -2,5 DS. Il est absent chez le père, qui n’a pas de petite taille.
+Une variation hétérozygote est identifiée chez un patient avec petite taille à -3 DS et déformation de Madelung : `NM_000451.3:c.399G>C`. Le variant est également présent chez la mère, qui présente une petite taille à -2,5 DS. Il est absent chez le père, qui n’a pas de petite taille.
 
 - Q1 Dans quel gène se trouve la variation ?
 - Q2 Quelles sont les maladies associées à ce gène et quels sont leurs modes de transmission ? `OMIM`
@@ -98,4 +98,7 @@ Fichier texte
 9. Génotype et autres informations (une colonne par échantillon)
 
 ## Exercice 3
-FIXME Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés [sur wANNOVAR](http://wannovar.wglab.org/done/99327/sZgG_FQxzUAaX04G/index.html). Quel variant est responsable de la pathologie de ce patient ?
+
+Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés [sur wANNOVAR](http://wannovar.wglab.org/FIXME).
+
+ - Q1 Quel variant est responsable de la pathologie de ce patient ?
