@@ -4,8 +4,7 @@ Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
-- Réponses des exercices à écrire dans un fichier texte au format Markdown (CommonMark, extension .md)
-- FIXME	Formatage des réponses https://frama.link/example-md
+- Réponses des exercices à écrire dans un fichier texte au format Markdown (CommonMark, extension .md). [Modèle](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) à respecter de formatage des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
 
 ```
 # UE génétique médicale 2017-04-05
