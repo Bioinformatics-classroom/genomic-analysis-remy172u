@@ -49,9 +49,9 @@ Ci-dessous se trouve la région génomique autour de la variation `NC_000018.9:g
 ![Capture d'écran d'Alamut, sens de transcription du gène](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-de-transcription.png)
 D'après Alamut Visual v.2.9 © Interactive Biosoftware.
 
-- Q3 Quelle est la fréquence de chacun de ces variants dans la population générale ? `GnomAD`
-- Q4 Quelle est la conséquence protéique de chacun de ces variants ? `GnomAD`
-- Q5 Lequel de ces variants semble mériter une étude approfondie ? Argumentez.
+- Q4 Quelle est la fréquence de chacun de ces variants dans la population générale ? `GnomAD`
+- Q5 Quelle est la conséquence protéique de chacun de ces variants ? `GnomAD`
+- Q6 Lequel de ces variants semble mériter une étude approfondie ? Argumentez.
 
 ### Exercice 2
 
@@ -89,7 +89,6 @@ Voici quelques éléments d'orientation pour certains de ces critères :
   - PM1 : `NCBI (protein)`
   - PP3 : `VEP` `wANNOVAR`
   - Autres : `VEP` `wANNOVAR`
-FIXME liste qui précède incompréhensible
 
 ### Exercice 3
 
