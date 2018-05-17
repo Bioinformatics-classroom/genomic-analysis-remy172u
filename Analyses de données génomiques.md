@@ -26,7 +26,9 @@ NC_000018.9:g.52895514_52895515delGA
 
 Vous avez jusqu'à aujourd'hui, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre aux questions. Toute réponse apportée ultérieurement sera ignorée.
 
-![Deadline](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
+<kbd>
+  <img src="https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png" alt="Deadline">
+</kbd>
 
 ## Exercices
 
