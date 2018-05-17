@@ -74,7 +74,7 @@ Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Lais
 - Q17 Pourquoi existe-t-il plusieurs lignes alors que vous n’avez saisi qu’un seul variant ?
 - Q18 Exportez le résultat de cette requête au format VCF.
 - Q19 Analysez ce VCF dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse. `wAnnovar`
-- Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (« *Standards and guidelines for the interpretation of sequence variants* », Richards et al., Genet. Med., 2015). Quel est le DOI de l’article ? `Pubmed`
+- Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (*Standards and guidelines for the interpretation of sequence variants*, Richards *et al.*, Genet. Med., 2015). Quel est le DOI de l’article ? `Pubmed`
 - Q21 D’après cet article, quels sont les critères déterminant une variation pathogène ou probablement pathogène ? (100 mots maximum, environ 8 à 10 critères attendus, exemple : « ségrégation du variant dans la famille »).
 - Q22 Dans quelle catégorie classez-vous le variant `NM_000451.3:c.399G>C` (pathogène, probablement pathogène, probablement bénin, bénin, VOUS) ? Sur quels critères ?
   - `VEP` `wANNOVAR`
