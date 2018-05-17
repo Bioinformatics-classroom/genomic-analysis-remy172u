@@ -27,7 +27,6 @@ NC_000018.9:g.52895514_52895515delGA
 Vous avez jusqu'à ce soir, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre aux questions. Tout réponse apportée ultérieurement sera ignorée.
 
 ![Deadline](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
-FIXME uploader le screenshot de la deadline à la racine du dépôt avec le nom « Deadline.png »
 
 ## Exercices
 
