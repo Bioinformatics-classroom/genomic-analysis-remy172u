@@ -45,7 +45,7 @@ Pour chercher une délétion dans gnomAD, il faut préciser la base qui précèd
 Région génomique autour de la variation `NC_000018.9:g.52999284delC`, dans le sens génomique et dans le sens de transcription du gène.
 ![Capture d'écran d'Alamut, sens génomique](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-g%C3%A9nomique.png)
 
-![Capture d'écran d'Alamut, sens de transcription du gène](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-g%C3%A9nomique.png)
+![Capture d'écran d'Alamut, sens de transcription du gène](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-de-transcription.png)
 D'après Alamut Visual v.2.9 © Interactive Biosoftware
 
 - Q3 Quelle est la fréquence de chacun de ces variants dans la population générale ? `GnomAD`
