@@ -34,15 +34,15 @@ Vous avez jusqu'à ce soir, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre a
 
 Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopkins :
 1. `NC_000018.9:g.52895531T>C`
-2. `NC_000018.9:g.52999284delC`
+2. `NC_000018.9:g.52999284delG`
 3. `NC_000018.9:g. 53331929C>A`
 
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
 
-Pour chercher une délétion dans gnomAD, il faut préciser la base qui précède la délétion. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>. Dans notre cas, la séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delC` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété). Le code est précisé dans le sens 3′5′ car le gène se trouve sur le brin antisens.
+Pour chercher une délétion dans gnomAD, il faut préciser la **base qui précède** la délétion **dans le sens 5′3′**. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>. Dans notre cas, la séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delG` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété). Le code est précisé dans le sens 3′5′ car le gène se trouve sur le brin antisens.
 
-Région génomique autour de la variation `NC_000018.9:g.52999284delC`, dans le sens génomique et dans le sens de transcription du gène.
+Région génomique autour de la variation `NC_000018.9:g.52999284delG`, dans le sens génomique et dans le sens de transcription du gène.
 ![Capture d'écran d'Alamut, sens génomique](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-g%C3%A9nomique.png)
 
 ![Capture d'écran d'Alamut, sens de transcription du gène](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-de-transcription.png)
