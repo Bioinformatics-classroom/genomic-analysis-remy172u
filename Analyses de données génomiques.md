@@ -4,7 +4,7 @@ Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
-Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension `.md`). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses (reproduit ci-dessous), pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
+Créez un nouveau fichier que vous appellerez `Réponses.md`. Écrivez dans ce fichier les réponses aux exercices au format Markdown (CommonMark, extension `.md`). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses (reproduit ci-dessous), pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
 
 ```
 # UE génétique médicale 2018-05-17
