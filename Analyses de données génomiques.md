@@ -41,7 +41,7 @@ Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopk
 
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
-- Q3 Convertissez la notation génomique (g.) des ces variants en notation nucléotidique (c.). Que remarquez vous ? Que pouvez-vous en conclure quant au sens de transcription du gène ? `Mutalyzer`
+- Q3 Convertissez la notation génomique (g.) de ces variants en notation nucléotidique (c.). Que remarquez vous ? Que pouvez-vous en conclure quant au sens de transcription du gène ? `Mutalyzer`
 
 Pour chercher une délétion dans gnomAD, il faut préciser la **base qui précède** la délétion **dans le sens génomique (5′3′)**. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>.
 
