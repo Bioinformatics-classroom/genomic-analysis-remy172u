@@ -4,7 +4,7 @@ Dr Anne-Sophie Denommé-Pichon - 2018-05-17
 
 ## Consignes
 
-Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension `.md`). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses, pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
+Écrivez les réponses aux exercices dans un fichier texte au format Markdown (CommonMark, extension `.md`). Respectez ce [modèle de formatage](https://raw.githubusercontent.com/Oodnadatta/Exercises/master/exemple.md) des réponses (reproduit ci-dessous), pour ce [rendu final](https://github.com/Oodnadatta/Exercises/blob/master/exemple.md).
 
 ```
 # UE génétique médicale 2018-05-17
@@ -24,7 +24,7 @@ NC_000018.9:g.52895514_52895515delGA
 [NM_001083962.1:c.1957_1958delTC in UCSC](http://example.com)
 ```
 
-Vous avez jusqu'à ce soir, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre aux questions. Tout réponse apportée ultérieurement sera ignorée.
+Vous avez jusqu'à aujourd'hui, jeudi 17 mai 2018 à 18 h 00 CEST pour répondre aux questions. Toute réponse apportée ultérieurement sera ignorée.
 
 ![Deadline](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/Deadline.png)
 
@@ -39,14 +39,15 @@ Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopk
 
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
+- Q3 Convertissez la notation génomique (g.) des ces variants en notation nucléotidique (c.). Que remarquez vous ? Que pouvez-vous en conclure quant au sens de transcription du gène ? `Mutalyzer`
 
-Pour chercher une délétion dans gnomAD, il faut préciser la **base qui précède** la délétion **dans le sens 5′3′**. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>. Dans notre cas, la séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delG` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété). Le code est précisé dans le sens 3′5′ car le gène se trouve sur le brin antisens.
+Pour chercher une délétion dans gnomAD, il faut préciser la **base qui précède** la délétion **dans le sens génomique (5′3′)**. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>.
 
-Région génomique autour de la variation `NC_000018.9:g.52999284delG`, dans le sens génomique et dans le sens de transcription du gène.
+Ci-dessous se trouve la région génomique autour de la variation `NC_000018.9:g.52999284delG`, dans le sens génomique et dans le sens de transcription du gène.
 ![Capture d'écran d'Alamut, sens génomique](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-g%C3%A9nomique.png)
 
 ![Capture d'écran d'Alamut, sens de transcription du gène](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/sens-de-transcription.png)
-D'après Alamut Visual v.2.9 © Interactive Biosoftware
+D'après Alamut Visual v.2.9 © Interactive Biosoftware.
 
 - Q3 Quelle est la fréquence de chacun de ces variants dans la population générale ? `GnomAD`
 - Q4 Quelle est la conséquence protéique de chacun de ces variants ? `GnomAD`
