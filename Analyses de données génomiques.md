@@ -91,9 +91,3 @@ Voici quelques éléments d'orientation pour certains de ces critères :
   - PM1 : `NCBI (protein)`
   - PP3 : `VEP` `wANNOVAR`
   - Autres : `VEP` `wANNOVAR`
-
-### Exercice 3
-FIXME
-Vous voulez analyser les résultats d’exome d’un enfant de 6 ans avec obésité morbide et diarrhée chronique sévère. Les parents sont cousins germains. Les résultats ont été chargés [sur wANNOVAR](http://wannovar.wglab.org/FIXME).
-
- - Q1 Quel variant est responsable de la pathologie de ce patient ?
