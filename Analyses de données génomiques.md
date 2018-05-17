@@ -40,7 +40,7 @@ Trois variations sont identifiées chez un patient avec un syndrome de Pitt-Hopk
 - Q1 À quelle séquence de référence ces notations se réfèrent-elles ?
 - Q2 Sur quel chromosome se trouvent ces variants ?
 
-FIXME Note : pour chercher une délétion dans gnomAD, il faut préciser la base qui précède. Par exemple, pour rechercher `NC_000018.9: g.11111delA`, le format d’entrée dans gnomAD est `18-11110-TA-T`. La séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delC` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété).
+Pour chercher une délétion dans gnomAD, il faut préciser la base qui précède la délétion. Par exemple, pour rechercher <code>NC_000018.9: g.1111<b>1</b>delA</code>, le format d’entrée dans gnomAD est <code>18-1111<b>0</b>-TA-T</code>. Dans notre cas, la séquence dans le sens de transcription du gène (3′5′) autour du nucléotide délété `NC_000018.9:g.52999284delC` est <code>GCAT<b>C</b>ACAC</code> (le nucléotide en gras est le nucléotide délété). Le code est précisé dans le sens 3′5′ car le gène se trouve sur le brin antisens.
 
 ![FIXME](https://raw.githubusercontent.com/Bioinformatics-classroom/Genomic-analysis/master/FIXME.jpg)
 
@@ -75,14 +75,15 @@ Ajoutez l’option pour avoir les numéros de transcrits Ensembl et RefSeq. Lais
 - Q19 Analysez ce VCF dans wAnnovar. Utilisez votre adresse mail universitaire. Collez l’URL de l’analyse dans le fichier de réponse. `wAnnovar`
 - Q20 Trouver l’article des recommandations de l’ACMG sur l’interprétation des variants de séquence (*Standards and guidelines for the interpretation of sequence variants*, Richards *et al.*, Genet. Med., 2015). Quel est le DOI de l’article ? `Pubmed`
 - Q21 D’après cet article, quels sont les critères déterminant une variation pathogène ou probablement pathogène ? (100 mots maximum, environ 8 à 10 critères attendus, exemple : « ségrégation du variant dans la famille »).
-- Q22 Dans quelle catégorie classez-vous le variant `NM_000451.3:c.399G>C` (pathogène, probablement pathogène, probablement bénin, bénin, VOUS) ? Sur quels critères ?
-  - `VEP` `wANNOVAR`
+- Q22 Dans quelle catégorie classez-vous le variant `NM_000451.3:c.399G>C` (pathogène, probablement pathogène, probablement bénin, bénin, VOUS) ? Sur quels critères ? `VEP` `wANNOVAR`
+Voici quelques éléments d'orientation pour certains de ces critères :
   - PS1 : `LOVD` `ClinVar`
   - PS2 : énoncé
   - PS3 : `PubMed`
   - PS4 : `GnomAD` `1000 Genomes` `Exome Variant Server`
   - PM1 : `NCBI (protein)`
   - PP3 : `VEP` `wANNOVAR`
+  - Autres : `VEP` `wANNOVAR`
 FIXME liste qui précède incompréhensible
 
 ### Exercice 3
